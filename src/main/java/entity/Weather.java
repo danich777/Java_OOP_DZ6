@@ -1,4 +1,4 @@
-package lesson7.project.entity;
+package entity;
 
 public class Weather {
     private String city;

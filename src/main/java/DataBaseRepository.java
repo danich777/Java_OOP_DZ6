@@ -1,6 +1,4 @@
-package lesson7.project;
-
-import lesson7.project.entity.Weather;
+import entity.Weather;
 
 import java.io.Reader;
 import java.sql.Connection;

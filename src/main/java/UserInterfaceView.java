@@ -1,5 +1,3 @@
-package lesson7.project;
-
 import java.io.IOException;
 import java.util.Scanner;
 

@@ -1,7 +1,5 @@
-package lesson7.project;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lesson7.project.entity.Weather;
+import entity.Weather;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
