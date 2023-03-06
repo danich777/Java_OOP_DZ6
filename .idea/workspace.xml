@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e793bea-8ffe-4558-9661-4ac293ca4b0d" name="Changes" comment="ДЗ">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WeatherPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccuweatherModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccuweatherModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataBaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Period.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterfaceView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterfaceView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WeatherModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccuweatherModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccuweatherModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataBaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Period.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterfaceView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterfaceView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,9 +53,15 @@
     "last_opened_file_path": "C:/Users/Daniil/Desktop/Java_OOP/Java_OOP_HW6/Java_OOP_HW6/src/main/java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.45287356",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniil\Desktop\Java_OOP\Java_OOP_HW6\Java_OOP_HW6\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -72,6 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677711491432</updated>
     </task>
+    <task id="LOCAL-00001" summary="ДЗ">
+      <created>1677713135728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677713135728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

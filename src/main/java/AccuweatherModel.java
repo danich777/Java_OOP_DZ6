@@ -16,6 +16,7 @@ public class AccuweatherModel implements WeatherModel {
     private static final String VERSION = "v1";
     private static final String DAILY = "daily";
     private static final String ONE_DAY = "1day";
+    private static final String FIVE_DAYS = "5day";
     private static final String API_KEY = "pXJd8MokcZCdrd2MsoGl2DBZAyCa0zvv";
     private static final String API_KEY_QUERY_PARAM = "apikey";
     private static final String LOCATIONS = "locations";
@@ -25,7 +26,8 @@ public class AccuweatherModel implements WeatherModel {
     private static final OkHttpClient okHttpClient = new OkHttpClient();
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    private DataBaseRepository dataBaseRepository = new DataBaseRepository();
+    private static WeatherPrint wprint = new WeatherPrint();
+
 
     public void getWeather(String selectedCity, Period period) throws IOException {
         switch (period) {
@@ -47,21 +49,34 @@ public class AccuweatherModel implements WeatherModel {
 
                 Response oneDayForecastResponse = okHttpClient.newCall(request).execute();
                 String weatherResponse = oneDayForecastResponse.body().string();
-                System.out.println(weatherResponse);
-                //TODO: сделать человекочитаемый вывод погоды. Выбрать параметры для вывода на свое усмотрение
-                //Например: Погода в городе Москва - 5 градусов по цельсию Expect showers late Monday night
-                //dataBaseRepository.saveWeatherToDataBase(new Weather()) - тут после парсинга добавляем данные в БД
+                wprint.print1dayWeather(weatherResponse);
+
+
                 break;
             case FIVE_DAYS:
-                //TODO*: реализовать вывод погоды на 5 дней
+                HttpUrl httpUrl5d = new HttpUrl.Builder()
+                        .scheme(PROTOKOL)
+                        .host(BASE_HOST)
+                        .addPathSegment(FORECASTS)
+                        .addPathSegment(VERSION)
+                        .addPathSegment(DAILY)
+                        .addPathSegment(FIVE_DAYS)
+                        .addPathSegment(detectCityKey(selectedCity))
+                        .addQueryParameter(API_KEY_QUERY_PARAM, API_KEY)
+                        .build();
+
+                Request request5d = new Request.Builder()
+                        .url(httpUrl5d)
+                        .build();
+
+                Response fiveDayForecastResponse = okHttpClient.newCall(request5d).execute();
+                String weatherResponse5d = fiveDayForecastResponse.body().string();
+                wprint.print5dayWeather(weatherResponse5d);
+
                 break;
         }
     }
 
-    @Override
-    public List<Weather> getSavedToDBWeather() {
-        return dataBaseRepository.getSavedToDBWeather();
-    }
 
     private String detectCityKey(String selectCity) throws IOException {
         //http://dataservice.accuweather.com/locations/v1/cities/autocomplete
@@ -89,3 +104,4 @@ public class AccuweatherModel implements WeatherModel {
         return cityKey;
     }
 }
+
