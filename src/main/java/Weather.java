@@ -5,6 +5,10 @@ public class Weather {
     private String date;
     private String description;
 
+    private String minTemp;
+
+    private String maxTemp;
+
     public Weather() {
     }
 
@@ -24,11 +28,29 @@ public class Weather {
         this.description = description;
     }
 
+    public String getMinTemp() {
+        return minTemp;
+    }
+
+    public void setMinTemp(String minTemp) {
+        this.minTemp = minTemp;
+    }
+
+    public String getMaxTemp() {
+        return maxTemp;
+    }
+
+    public void setMaxTemp(String maxTemp) {
+        this.maxTemp = maxTemp;
+    }
+
     @Override
     public String toString() {
         return "Погода" +
-                "Дата: " + date + '\'' +
-                ", прогноз" + description;
+                " на дату: " + date + '\n' +
+                "Описание: " + description + '\n' +
+                "Минимальная температура: " + minTemp + '\n' +
+                "Максимальная температура: " + maxTemp + '\n';
     }
 }
 
